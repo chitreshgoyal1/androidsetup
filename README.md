@@ -1,7 +1,6 @@
-androidsetup
+Android app with phonegap and intellij
 ============
 
-android project with phonegap and intellij
 
 Download:
 
@@ -21,23 +20,26 @@ SDK and NDK path
 
 Create a New Project
     
-    Select "Application Module" under "Android" & then enter project name and location.
-    Click on the New button to create a new SDK mapping.
-    On your first run, it will prompt you to configure a Java SDK: Press ok
-    Select the location where the Java SDK was installed c:\Program Files\Java\jdk1.6.0_22
-    Once you select that, you will be prompted to select the location of the Android SDK i.e. E:\Installations\adt-bundle-windows-x86_64-20131030\sdk\
-    After this you will get prompt " Created New Android SDK" : Press ok
-    Now Project SDK: is filled with "Android 4.3 plateform(java version "1.6.0_22")
-    Click Next and Finish: for target device select emulator if you don't have devices.
+    1. Select "Application Module" under "Android" & then enter project name and location.
+    2. Click on the New button to create a new SDK mapping.
+    3. On your first run, it will prompt you to configure a Java SDK: Press ok
+    4. Select the location where the Java SDK was installed c:\Program Files\Java\jdk1.6.0_22
+    5. Once you select that, you will be prompted to select the location of the Android SDK i.e.
+       E:\Installations\adt-bundle-windows-x86_64-20131030\sdk\
+    6. After this you will get prompt " Created New Android SDK" : Press ok
+    7. Now Project SDK: is filled with "Android 4.3 plateform(java version "1.6.0_22")
+    8. Click Next and Finish: for target device select emulator if you don't have devices.
     
 Setup Cordova
 
-    Unzip cordova2.9.0 
-    make folder in Project as: assets/www
-    copy cordova.js from unzip cordova2.9.0/lib/android/cordova-2.9.0.js and paste in assets/www/cordova-2.9.0.js
-    Right click and select Add As Library
-    Right click on main folder and select Open Modules Settings -> add new module and provide zar location
-    compile zar file and apply "cordova2.9.0/lib/android/cordova-2.9.0.zar"
+    1. Unzip cordova2.9.0 
+    2. make folder in Project as: assets/www
+    3. copy cordova.js from unzip cordova2.9.0/lib/android/cordova-2.9.0.js 
+       and paste in assets/www/cordova-2.9.0.js
+    4. Right click and select Add As Library
+    5. Right click on main folder and select Open Modules Settings -> add new module 
+       and provide zar location
+    6. compile zar file and apply "cordova2.9.0/lib/android/cordova-2.9.0.zar"
     
 
 Crate html file under assets/www folder as: assets/www.index.html
@@ -121,4 +123,4 @@ Set Up Virtual Device
     click on the Device Definitions tab and select Nexus S by Google and then click Create AVD
     Accept the defaults and enter 10 in the SD Card Size
     
-    Run & Build
+Run & Build
